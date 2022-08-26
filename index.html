@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB Color Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="hex_palette"></div>
+
+        <div id="color_picker">
+            <div class="wrapper">
+                R<input type="range" name="red" id="red" value="0" max="255" oninput="colors()"><br>
+            </div>
+            <div class="wrapper">
+                G<input type="range" name="green" id="green" value="0" max="255" oninput="colors()"><br>
+            </div>
+            <div class="wrapper">
+                B<input type="range" name="blue" id="blue" value="0" max="255" oninput="colors()"><br>
+            </div>
+        </div>
+
+        <span id="output">rgb(0,0,0)</span>
+    </div>
+</body>
+<script src="code.js"></script>
+</html>
